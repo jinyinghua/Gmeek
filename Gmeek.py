@@ -108,7 +108,7 @@ class GMEEK():
 
         if "homeUrl" not in self.blogBase:
             if str(self.repo.name).lower() == (str(self.repo.owner.login) + ".github.io").lower():
-                self.blogBase["homeUrl"] = f"https://{self.repo.name}"
+                self.blogBase["homeUrl"] = f"https://jinyinghua.dpdns.org"
             else:
                 self.blogBase["homeUrl"] = f"https://{self.repo.owner.login}.github.io/{self.repo.name}"
         print("GitHub Pages URL: ", self.blogBase["homeUrl"])
